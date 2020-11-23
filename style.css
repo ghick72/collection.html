@@ -27,12 +27,13 @@ a:active{
    margin:0;
    padding:20px;
  }
-
+ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
  #grid ol {
-   border-right:1px solid gray;
-   width:100px;
-   margin:0;
-   padding:20px;
    padding-left: 47px;
  }
  #grid{
