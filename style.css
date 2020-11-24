@@ -32,6 +32,7 @@ ol{
   width:100px;
   margin:0;
   padding:20px;
+  height:100vh;
 }
  #grid ol {
    padding-left: 47px;
@@ -49,6 +50,7 @@ ol{
    }
    #grid ol{
    border-right:none;
+   height:auto;
    }
    h1{
    border-bottom:none;
