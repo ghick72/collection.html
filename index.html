@@ -6,9 +6,15 @@
 </head>
 <link rel="stylesheet" href="style.css">
 
-<body>
+<body style="background-color:beige;color:black;">
   <h1><a href="index.html">노래 스트리밍 모음집</a></h1>
 
+  <input type="button" value="night"
+  onclick="document.querySelector('body').style.backgroundColor='DarkSlateGray';
+  document.querySelector('body').style.color='white';">
+  <input type="button" value="day"
+  onclick="document.querySelector('body').style.backgroundColor='beige';
+  document.querySelector('body').style.color='black';">
 <div id="grid">
 <ol>
   <li><a href="2.html">카더가든</a></li>
