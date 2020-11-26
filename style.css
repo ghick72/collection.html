@@ -23,7 +23,6 @@ a:active{
  h1{
    font-size:45px;
    text-align: center;
-   border-bottom: 1px solid gray;
    margin:0;
    padding:20px;
  }
@@ -40,9 +39,15 @@ ol{
  #grid{
    display:grid;
    grid-template-columns: 150px 1fr;
+   border-top: 1px solid gray;;
  }
  #article{
    padding-left: 24px;
+ }
+ #position{
+   position:relative;
+   left: 4px;
+   bottom: 4px;
  }
  @media(max-width:800px){
    #grid{
