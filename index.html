@@ -3,6 +3,34 @@
 <head>
 <title>노래 스트리밍 모음집</title>
 <meta charset="utf-8">
+<script>
+  function nightDayHandler(self){
+    var target = document.querySelector('body')
+    if (self.value==='night'){
+      target.style.backgroundColor='DarkSlateGray';
+      target.style.color='black';
+      self.value='day';
+
+       var ol = document.querySelectorAll('ol');
+       var i = 0;
+       while (i < ol.length) {
+         ol[i].style.color = 'black';
+         i= i + 1;
+      }
+    } else {
+      target.style.backgroundColor='beige';
+      target.style.color='black';
+      self.value='night';
+      var ol = document.querySelectorAll('ol');
+      var i = 0;
+      while (i < ol.length) {
+        ol[i].style.color = 'black';
+        i= i + 1;
+      }
+    }
+  }
+
+</script>
 </head>
 <link rel="stylesheet" href="style.css">
 
@@ -10,18 +38,8 @@
   <h1><a href="index.html">노래 스트리밍 모음집</a></h1>
 <div id="position">
   <input id="night_day" type="button" value="night" onclick="
-       var target = document.querySelector('body')
-       if (this.value==='night'){
-       target.style.backgroundColor='DarkSlateGray';
-       target.style.color='white';
-       this.value='day';
-     } else {
-       target.style.backgroundColor='beige';
-       target.style.color='black';
-       this.value='night';
-     }
+nightDayHandler(this)
        ">
-
 </div>
 
 <div id="grid">
@@ -37,6 +55,11 @@
 </div>
 </body>
 </html>
+  <input id="night_day" type="button" value="night" onclick="
+nightDayHandler(this)
+       ">
+
+
 <!--
 <p>
 
