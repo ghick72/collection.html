@@ -4,33 +4,36 @@
 <title>노래 스트리밍 모음집</title>
 <meta charset="utf-8">
 <script>
+  function LinksSetColor(color){
+    var a = document.querySelectorAll('a');
+    var i = 0;
+    while (i < a.length) {
+      a[i].style.color = color;
+      i= i + 1;
+   }
+ }
+
+   function BodySetColor(color){
+     document.querySelector('body').style.color=color;
+   }
   function nightDayHandler(self){
-    var target = document.querySelector('body')
+    var target = document.querySelector('body');
     if (self.value==='night'){
-      target.style.backgroundColor='DarkSlateGray';
-      target.style.color='black';
+      target.style.backgroundColor='black';
+      BodySetColor('white')
       self.value='day';
 
-       var ol = document.querySelectorAll('ol');
-       var i = 0;
-       while (i < ol.length) {
-         ol[i].style.color = 'black';
-         i= i + 1;
-      }
+      LinksSetColor('powderblue');
+
     } else {
       target.style.backgroundColor='beige';
-      target.style.color='black';
+      BodySetColor('black');
       self.value='night';
-      var ol = document.querySelectorAll('ol');
-      var i = 0;
-      while (i < ol.length) {
-        ol[i].style.color = 'black';
-        i= i + 1;
-      }
+
+      LinksSetColor('black');
     }
   }
-
-</script>
+  </script>
 </head>
 <link rel="stylesheet" href="style.css">
 
