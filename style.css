@@ -1,3 +1,24 @@
+.img{
+  position: relative;
+  background-image: url(backgroundmusic.jpg);
+  height: 7rem;
+  background-size: 100% 100%;
+}
+.img-cover{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.img .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
 body{
   margin:0;
 }
@@ -14,14 +35,14 @@ a:hover{
   text-decoration: none;
 }
 a:active{
-  color:red;
+  color:gray;
   text-decoration: none;
 }
  #active{
    color:red;
  }
  h1{
-   font-size:45px;
+   font-size:35px;
    text-align: center;
    margin:0;
    padding:20px;
@@ -47,7 +68,7 @@ ol{
  #position{
    position:relative;
    left: 4px;
-   bottom: 4px;
+   z-index: 2;
  }
  @media(max-width:800px){
    #grid{
