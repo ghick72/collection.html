@@ -60,7 +60,7 @@ ol{
  #grid{
    display:grid;
    grid-template-columns: 150px 1fr;
-   border-top: 1px solid gray;;
+   border-top: 1px solid gray;
  }
  #article{
    padding-left: 24px;
